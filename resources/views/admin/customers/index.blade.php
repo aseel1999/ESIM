@@ -69,7 +69,6 @@
                                         </td>
                                         <td>{{ $customer->opinion}}</td>
                                         <td>{{@$customer->company}}
-                                        
                                         <td>
                                             <div class="table-actions">
                                                 <a href="{{ route('customers.edit', $customer->id) }}"><i
