@@ -80,7 +80,13 @@ return[
 'hide_description'=>'الوصف الدقيق',
 'contactImage'=>'صورة التواصل',
 'totalprice'=>'السعر النهائي',
-
+'Send'=>'أرسل',
+'delete'=>'حذف',
+'Order'=>'الطلبات',
+'Package'=>'الباقة',
+'admin'=>'الادمن',
+'name'=>'الاسم',
+'Password'=>'كلمة السر',
 
 
 ];

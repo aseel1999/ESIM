@@ -49,9 +49,9 @@ class DeviceController extends Controller
         // redirect user
         return redirect(route('devices.index'));
     }
-    public function destroy($id)
+    public function destroy(Device $device)
     {
-        $device= Device::find($id);
+        
         $device->delete();
         session()->flash('success', ' Device Deleted Successfully.');
         // redirect user

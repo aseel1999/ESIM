@@ -42,7 +42,7 @@
                                 <th>{{ trans('main.from') }}</th>
                                 <th>{{   trans('main.email')}}</th>
                                 <th>{{ trans('main.Message') }}</th>
-                                <th>{{ trans('main.Actions') }}</th>
+                                
                             </tr>
                         </thead>
                         <tbody>
@@ -53,12 +53,7 @@
                                 <td>{{$contact->name}}</td>
                                 <td>{{$contact->email}}</td>
                                 <td>{{$contact->message}}</td>
-                                <td>
-<!-- Button trigger modal -->
-<!-- Button trigger modal -->
-
-
-                                </td>
+                                
                             </tr>
                             @endforeach
                         </tbody>

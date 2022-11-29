@@ -53,9 +53,8 @@ class CustomerController extends Controller
         // redirect user
         return redirect(route('customers.index'));
     }
-    public function destroy($id)
+    public function destroy(Customer $customer)
     {
-        $customer= Customer::find($id);
         $customer->delete();
         session()->flash('success', ' CustomerDeleted Successfully.');
         // redirect user

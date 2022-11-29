@@ -47,9 +47,8 @@ class Type_PaymentController extends Controller
         // redirect user
         return redirect(route('type_payments.index'));
     }
-    public function destroy($id)
+    public function destroy(Type_Payment $type_payment)
     {
-        $type_payment= Type_Payment::find($id);
         $type_payment->delete();
         session()->flash('success', 'Payment Deleted Successfully.');
         

@@ -69,11 +69,15 @@
                                         </td>
                                         <td>{{ $customer->opinion}}</td>
                                         <td>{{@$customer->company}}
-                                        
                                         <td>
                                             <div class="table-actions">
                                                 <a href="{{ route('customers.edit', $customer->id) }}"><i
                                                     class="btn btn-warning ik ik-edit-2"></i></a>
+                                                    <form action="{{ route('customers.destroy', $customer->id) }}" method="post" style="display: inline-block">
+                                                        {{ csrf_field() }}
+                                                        {{ method_field('delete') }}
+                                                        <button type="submit" class="btn btn-danger delete btn-sm"><i class="fa fa-trash"></i> {{ trans('main.delete') }}</button>
+                                                    </form><!-- end of form -->
 
                                             </div>
                                         </td>

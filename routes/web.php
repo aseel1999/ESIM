@@ -47,6 +47,7 @@ Route::middleware('guest')->group(function () {
     Route::resources(['customers'=>CustomerController::class]);
     Route::resources(['company_devices'=>Company_DeviceController::class]);
     Route::resources(['admins'=>AdminController::class]);
+    Route::resource('/landing_pages','\App\Http\Controllers\LandingController');
     Route::get('/orders', '\App\Http\Controllers\OrderController@index')->name('orders.index');
 
 });
@@ -58,7 +59,7 @@ Route::group(['prefix'=>LaravelLocalization::setLocale(),
     Route::get('/','\App\Http\Controllers\LandingController@land');
     Route::get('/create/order', '\App\Http\Controllers\OrderController@create');
     Route::post('/add/order', '\App\Http\Controllers\OrderController@store')->name('orders.store');
-    Route::resource('/landing_pages','\App\Http\Controllers\LandingController');
+    
 
 });
 

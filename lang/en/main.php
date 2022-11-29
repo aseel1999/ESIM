@@ -80,7 +80,12 @@ return[
 'hide_description'=>'hide_description',
 'contactImage'=>'contactImage',
 'totalprice'=>'totalprice',
-
-
+'Send'=>'Send',
+'delete'=>'delete',
+'Order'=>'Order',
+'Package'=>'Package',
+'admin'=>'admin',
+'name'=>'name',
+'Password'=>'Password',
 
 ];

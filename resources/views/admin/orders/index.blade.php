@@ -49,9 +49,10 @@
                                 <th>{{ trans('main.lastname') }}</th>
                                 <th>{{ trans('main.passport') }}</th>
                                 <th>{{ trans('main.discount') }}</th>
-                                <th>{{ trans('main.package_id') }}</th>
-                                <th>{{ trans('main.type_payent_id') }}</th>
+                                <th>{{ trans('main.pakage_id') }}</th>
+                                <th>{{ trans('main.type_payment_id') }}</th>
                                 <th>{{ trans('main.type') }}</th>
+                                
                               
                             </tr>
                         </thead>
@@ -64,9 +65,10 @@
                                         <td>{{ $order->lastname }}</td>
                                         <td>{{ $order->passport }}</td>
                                         <td>{{ $order->discount}}</td>
-                                         <td>{{ $order->pakage_id}}<td>
+                                        <td>{{ @$order->package_id}}<td>
                                         </td>{{ @$order->type_payment_id	}}</td>
                                         <td>{{ $order->type}}</td>
+                                      
                                         
                                     </tr>
                                 @endforeach

@@ -56,7 +56,9 @@
                                 <th>{{ trans('main.Email') }}</th>
                                 <th>{{ trans('main.Location') }}</th>
                                 <th>{{ trans('main.Contact') }}</th>
+                                <th>{{ trans('main.Actions') }}</th>
                             </tr>
+                            
                         </thead>
                         <tbody>
 
@@ -86,6 +88,13 @@
                                     width="60"></td>
                                 <td><img src="{{asset($landing_page->contact)}}" class="table-user-thumb"
                                     width="60"></td>
+                                    <td>
+                                        <div class="table-actions">
+                                        <a href="{{ route('landing_pages.edit', $landing_page) }}"><i
+                                            class="btn btn-warning ik ik-edit-2"></i></a>
+                                        <!-- end of form -->
+                                    </div>
+                                    </td>
                             </tr>
                             @endforeach
                         </tbody>

@@ -45,9 +45,8 @@ public function update(Request $request, $id)
     // redirect user
     return redirect(route('company_devices.index'));
 }
-public function destroy($id)
+public function destroy(Company_device $company_device)
 {
-    $company_device= Company_Device::find($id);
     $company_device->delete();
     session()->flash('success', ' Company Deleted Successfully.');
     // redirect user
