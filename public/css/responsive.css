@@ -1,0 +1,119 @@
+@media screen and (max-width: 1199px) {}
+
+@media screen and (max-width: 991px) {
+    
+    .main-wrapper {
+        padding-top: 75px;
+    }
+    
+    #header {
+        position: fixed;
+        top: 0;
+    }
+
+    #header .container {
+        justify-content: center;
+    }
+
+    .opt-mobail {
+        display: block;
+    }
+    
+    .opt-mobail .lang-site {
+        display: block
+    }
+    
+    .main_menu,
+    .logo-web {
+        display: none;
+    }
+
+    .logo-mobail {
+        display: block
+    }
+
+    .logo-site img {
+        max-width: 160px;
+    }
+    
+    .main_menu {
+        position: absolute;
+        width: 100%;
+        top: 82px;
+        left: 0;
+        background: #fff;
+        box-shadow: 0 6px 7px rgb(0 0 0 / 16%);
+        padding-bottom: 20px;
+        border-radius: 0;
+    }
+    .main_menu li {
+        display: block;
+        float: inherit;
+        padding: 10px 20px;
+    }
+
+    .sec_head {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .section_home {
+        background-size: cover !important;
+        background-position: center right !important;
+        height: auto;
+    }
+    .home_txt h1 {
+        font-size: 20px;
+    }
+    .item-features {
+        margin-bottom: 10px;
+    }
+    
+    .section_about {
+        padding: 0 0 60px;
+    }
+    
+    .cont-devices .item-devic {
+        width: 50%;
+    }
+    .section_customers .sec_head .btn-rating {
+    position: relative;
+}
+    
+    .item-contact {
+        margin-bottom: 10px;
+    }
+    
+    .cont-bt {
+        flex-direction: column;
+    }
+    .copyRight {
+        margin-bottom: 15px
+    }
+    
+    .d-flex {
+        flex-wrap: wrap;
+    }
+    .d-flex .form-group {
+    width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .item-package {
+        margin-bottom: 15px
+    }
+    .item-package figure img {
+        width: 100%;
+    }
+    .txt-package > div {
+        margin-bottom: 15px;
+    }
+    .txt-package > div p,
+    .txt-package > div span {
+    font-size: 19px;
+}
+    
+}
+
+@media screen and (max-width: 767px) {}
+
+@media screen and (max-width: 500px) {}
