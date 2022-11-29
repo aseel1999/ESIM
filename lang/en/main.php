@@ -80,6 +80,7 @@ return[
 'hide_description'=>'hide_description',
 'contactImage'=>'contactImage',
 'totalprice'=>'totalprice',
+'Send'=>'Send',
 
 
 

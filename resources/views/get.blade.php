@@ -103,9 +103,9 @@
                                                         </div>
                                                         <figure><img src="{{asset($pakage->imagepackage)}}" alt="" /></figure>
                                                         <div class="txt-package">
-                                                            <div><p>Data</p> <span>{{ $pakage->data }}</span></div>
-                                                            <div><p>Validity</p> <span>{{ $pakage->validity }}</span></div>
-                                                            <div><p>Price</p> <span>{{ $pakage->price }}</span></div>
+                                                            <div><p>{{ trans('main.Data') }}</p> <span>{{ $pakage->data }}</span></div>
+                                                            <div><p>{{ trans('main.Validity') }}</p> <span>{{ $pakage->validity }}</span></div>
+                                                            <div><p>{{ trans('main.Price') }}</p> <span>{{ $pakage->price }}</span></div>
                                                         </div>
                                                         <div class="quantity">
                                                             <div class="btn button-count dec jsQuantityDecrease" minimum="1"><i class="fa-solid fa-minus"></i></div>
@@ -148,9 +148,30 @@
                                                
                                             </div>
                                         </div>
+                                        <div class="form-group">
+                                            <table class="table">
+                                                <thead>
+                                                <tr>
+                                                    <th>{{trans ('main.price') }}</th>
+                                                    <th>{{ trans('main.discount') }}</th>
+                                                    <th>{{  trans('main.totalprice')}}</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody class="order-list">
+                                             @foreach ($pakages as $pakage)
+                                            <tr>
+                                            <td>{{ $pakage->price }}$</td>
+                                            <td>{{ $order->discount }}$</td>
+                                            <td class="pakage-price">{{ number_format($pakage->price * $pakage->quantity) }}$</td>
+                                           </tr>
+                                             @endforeach
+                                                </tbody>
+                                            </table>
+
+                                        </div>
                                      
                                         <div class="form-group">
-                                            <button class="btn-site btnReg" data-bs-toggle="modal" data-bs-target="#modalSuccess" type="submit"><span>Send</span></button>
+                                            <button class="btn-site btnReg" data-bs-toggle="modal" data-bs-target="#modalSuccess" type="submit"><span>{{ trans('main.Send') }}</span></button>
                                         </div>
                                     </form>
                                 </div>
@@ -178,9 +199,9 @@
                                                         </div>
                                                         <figure><img src="{{asset($pakage->imagepackage)}}" alt="" /></figure>
                                                         <div class="txt-package">
-                                                            <div><p>Data</p> <span>{{ $pakage->data }}</span></div>
-                                                            <div><p>Validity</p> <span>{{ $pakage->validity }}</span></div>
-                                                            <div><p>Price</p> <span>{{ $pakage->price }}</span></div>
+                                                            <div><p>{{ trans('main.Data') }}</p> <span>{{ $pakage->data }}</span></div>
+                                                            <div><p>{{ trans('main.Validity') }}</p> <span>{{ $pakage->validity }}</span></div>
+                                                            <div><p>{{ trans('main.Price') }}</p> <span>{{ $pakage->price }}</span></div>
                                                         </div>
                                                         <div class="quantity">
                                                             <div class="btn button-count dec jsQuantityDecrease" minimum="1"><i class="fa-solid fa-minus"></i></div>
@@ -235,7 +256,7 @@
 
                                         </div>
                                         <div class="form-group">
-                                            <button class="btn-site btnReg" data-bs-toggle="modal" data-bs-target="#modalSuccess" type="submit"><span>Send</span></button>
+                                            <button class="btn-site btnReg" data-bs-toggle="modal" data-bs-target="#modalSuccess" type="submit"><span>{{ trans('main.Send') }}</span></button>
                                         </div>
                                     </form>
                                 </div>

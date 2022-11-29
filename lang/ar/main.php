@@ -80,6 +80,7 @@ return[
 'hide_description'=>'الوصف الدقيق',
 'contactImage'=>'صورة التواصل',
 'totalprice'=>'السعر النهائي',
+'Send'=>'أرسل',
 
 
 

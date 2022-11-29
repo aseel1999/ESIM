@@ -48,7 +48,7 @@
                         @endforeach
                         </ul>
                       </a></li>
-					<li class="get-started"><a href="get.blade.php" class="page-scroll btn-site"><span>Contact Us{{ trans('main.GET STARTED') }}</span></a></li>
+					<li class="get-started"><a href="get.blade.php" class="page-scroll btn-site"><span>{{ trans('main.GET STARTED') }}</span></a></li>
                     
 				</ul>
                 <div class="opt-mobail">
