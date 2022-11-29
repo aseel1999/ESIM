@@ -79,6 +79,7 @@ return[
 'Description'=>'Description',
 'hide_description'=>'hide_description',
 'contactImage'=>'contactImage',
+'totalprice'=>'totalprice',
 
 
 

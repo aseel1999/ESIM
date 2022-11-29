@@ -214,6 +214,27 @@
                                             </div>
                                         </div>
                                         <div class="form-group">
+                                            <table class="table">
+                                                <thead>
+                                                <tr>
+                                                    <th>{{trans ('main.price') }}</th>
+                                                    <th>{{ trans('main.discount') }}</th>
+                                                    <th>{{  trans('main.totalprice')}}</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody class="order-list">
+                                             @foreach ($pakages as $pakage)
+                                            <tr>
+                                            <td>{{ $pakage->price }}$</td>
+                                            <td>{{ $order->discount }}$</td>
+                                            <td class="pakage-price">{{ number_format($pakage->price * $pakage->quantity) }}$</td>
+                                           </tr>
+                                             @endforeach
+                                                </tbody>
+                                            </table>
+
+                                        </div>
+                                        <div class="form-group">
                                             <button class="btn-site btnReg" data-bs-toggle="modal" data-bs-target="#modalSuccess" type="submit"><span>Send</span></button>
                                         </div>
                                     </form>
