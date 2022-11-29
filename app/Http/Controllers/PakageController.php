@@ -55,9 +55,9 @@ class PakageController extends Controller
         // redirect user
         return redirect(route('packages.index'));
     }
-    public function destroy($id)
+    public function destroy(Pakage $pakage)
     {
-        $pakage= Pakage::find($id);
+        
         $pakage->delete();
         session()->flash('success', ' Package Deleted Successfully.');
         // redirect user

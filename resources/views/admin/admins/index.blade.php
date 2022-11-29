@@ -42,6 +42,7 @@
                                 <th>{{ trans('main.name') }}</th>
                                 <th>{{ trans('main.Email') }}</th>
                                 <th>{{ trans('main.Password') }}</th>
+                                <th>{{ trans('main.Actions') }}</th>
                                 
                             </tr>
                         </thead>
@@ -53,6 +54,18 @@
                                 <td>{{$admin->name}}</td>
                                 <td>{{$admin->email}}</td>
                                 <td>{{$admin->password}}</td>
+                                <td>
+                                    <div class="table-actions">
+                                        <a href="{{ route('admins.edit', $admin->id) }}"><i
+                                            class="btn btn-warning ik ik-edit-2"></i></a>
+                                            <form action="{{ route('admins.destroy', $admin->id) }}" method="post" style="display: inline-block">
+                                                {{ csrf_field() }}
+                                                {{ method_field('delete') }}
+                                                <button type="submit" class="btn btn-danger delete btn-sm"><i class="fa fa-trash"></i> @lang('site.delete')</button>
+                                            </form><!-- end of form -->
+
+                                    </div>
+                                </td>
                                 
                             </tr>
                             @endforeach

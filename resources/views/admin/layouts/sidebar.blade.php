@@ -28,6 +28,15 @@
 
                         </div>
                     </div>
+                    <div class="nav-item has-sub">
+                        <a href="{{ route('admins.index') }}"><i class="ik ik-list"></i><span>{{ trans('main.admin') }}</span> <span
+                                class="badge badge-danger"></span></a>
+                        <div class="submenu-content">
+                            <a href="{{ route('admins.create') }}" class="menu-item">{{ trans('main.Create') }}</a>
+                          
+
+                        </div>
+                    </div>
 
 
 

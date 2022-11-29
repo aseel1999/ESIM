@@ -52,9 +52,8 @@ class SliceController extends Controller
         // redirect user
         return redirect(route('slices.index'));
     }
-    public function destroy($id)
+    public function destroy(Slice $slice)
     {
-        $slice= Slice::find($id);
         $slice->delete();
         session()->flash('success', ' Slice Deleted Successfully.');
         // redirect user

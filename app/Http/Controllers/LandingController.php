@@ -132,10 +132,9 @@ class LandingController extends Controller
         // redirect user
         return redirect(route('landing_pages.index'));
     }
-    public function destroy($id)
+    public function destroy(Landing_Page $Landing_Page)
     {
-        $Landing_page= Landing_Page::find($id);
-        $Landing_page->delete();
+        $Landing_Page->delete();
         session()->flash('success', ' Landing Page Deleted Successfully.');
         // redirect user
         return redirect(route('landing_pages.index'));

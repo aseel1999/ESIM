@@ -81,7 +81,11 @@ return[
 'contactImage'=>'contactImage',
 'totalprice'=>'totalprice',
 'Send'=>'Send',
-
-
+'delete'=>'delete',
+'Order'=>'Order',
+'Package'=>'Package',
+'admin'=>'admin',
+'name'=>'name',
+'Password'=>'Password',
 
 ];
