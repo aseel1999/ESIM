@@ -207,7 +207,7 @@
                     @foreach($customers as $customer)
                     <div class="item">
                         <div class="item-customers">
-                            <p>{{ $customer->opinion }},</p>
+                            <p>{{ $customer->opinion }}</p>
                             <div class="own-cust">
                                 <figure><img src="{{asset($customer->image)}}" alt="yyyy" /></figure>
                                 <div class="txt-cust">
